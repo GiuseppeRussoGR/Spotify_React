@@ -1,0 +1,22 @@
+@mixin icon_menu_sidebar() {
+  ul {
+    list-style-type: none;
+
+    li {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+      color: #b3b3b3;
+
+      .icon {
+        font-size: 20px;
+      }
+
+      &.active, &:hover {
+        background: #282828;
+        border-radius: 5px;
+        color: white;
+      }
+    }
+  }
+}

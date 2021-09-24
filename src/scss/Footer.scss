@@ -1,0 +1,101 @@
+.bottom-bar {
+  height: 6em;
+  background: #1d1d1d;
+  border-top: 2px solid #000000;
+
+  .data-song {
+    .image-song {
+      width: 80px;
+      height: 80px;
+      overflow: hidden;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .overview-song {
+    font-size: 0.7em;
+
+    div {
+      &:first-child {
+        font-weight: 700;
+      }
+
+      &:last-child {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .icon {
+    opacity: 0.4;
+    cursor: pointer;
+  }
+
+  .player {
+    .layer-1 {
+      cursor: pointer;
+
+      i {
+        opacity: 0.5;
+
+        &:first-child {
+          color: green;
+          opacity: 1;
+        }
+
+        &:nth-child(3) {
+          border-radius: 10px;
+          border: 1px solid white;
+          padding: 0.9em;
+        }
+
+        &:last-child {
+          color: green;
+          opacity: 1;
+        }
+      }
+    }
+
+    .layer-2 {
+      .count {
+        opacity: 0.6;
+        font-size: 0.8em;
+      }
+
+      .bar-progress {
+        .progress {
+          height: 0.5rem;
+          background: rgba(255, 255, 255, 0.1);
+
+          .progress-bar {
+            background-color: green;
+          }
+        }
+      }
+    }
+  }
+
+  .options {
+    i {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+
+    .volume {
+      .progress {
+        width: 5em;
+        height: 0.5rem;
+        background: rgba(255, 255, 255, 0.1);
+
+        .progress-bar {
+          background-color: green;
+        }
+      }
+    }
+  }
+}
